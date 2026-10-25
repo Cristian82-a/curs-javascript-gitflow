@@ -1,0 +1,40 @@
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Práctica 1: Git y Git Flow</title>
+  <style>
+    body { max-width: 900px; margin: 2rem auto; padding: 0 1rem; font: 1rem/1.6 Arial, sans-serif; color: #222; }
+    h1, h2 { color: #174a73; }
+    img { display: block; max-width: 100%; height: auto; border: 1px solid #ccc; margin: 1rem 0 2rem; }
+    code { background: #f1f1f1; padding: .15rem .3rem; }
+  </style>
+</head>
+<body>
+  <h1>Práctica 1: Sistemas de control de versiones</h1>
+  <p>Repositorio: <a href="https://github.com/Cristian82-a/curs-javascript-gitflow">curs-javascript-gitflow</a></p>
+
+  <h2>Introducción: Git y Git Flow</h2>
+  <p>Git es un sistema distribuido de control de versiones. Guarda el historial del proyecto y permite comparar cambios, recuperar versiones y trabajar en ramas.</p>
+  <p>Git Flow organiza el trabajo mediante ramas: <code>main</code> contiene versiones estables; <code>develop</code> integra el desarrollo; <code>feature/</code> sirve para nuevas funciones; <code>release/</code> prepara una versión; y <code>hotfix/</code> corrige problemas urgentes de producción.</p>
+  <p>Usamos este modelo para separar el trabajo de cada sección, integrar los cambios de forma controlada y etiquetar las versiones publicadas.</p>
+
+  <h2>Proceso realizado</h2>
+  <h3>1. Estructura inicial y features</h3>
+  <p>Se preparó el repositorio y las ramas principales. En <code>develop</code> se integraron las features <code>feature/contingutHTML</code>, <code>feature/atributsHTML</code> y <code>feature/estilsCSS</code>, además de la estructura inicial de la página.</p>
+
+  <h3>2. Release v1.0</h3>
+  <p>Se creó <code>release/v1.0</code> desde <code>develop</code>, se añadió la nota de versión al README y se integró la release en <code>main</code> y <code>develop</code>. Se creó la etiqueta <code>v1.0</code>.</p>
+
+  <h3>3. Hotfix</h3>
+  <p>La rama <code>hotfix/milloresV_1_0</code> contiene una mejora de la sección de contenido. Se integró en <code>main</code> y <code>develop</code> y se etiquetó como <code>v1.0.1</code>.</p>
+
+  <h3>4. Evidencias</h3>
+  <p>Las siguientes capturas muestran el estado final del trabajo y del proyecto:</p>
+  [images/evidencia1.png](images/evidencia1.png)
+  [images/evidencia2.png](images/evidencia2.png)
+
+  <p>Nota: Git Flow no estaba disponible en la máquina virtual, así que las ramas y fusiones se realizaron con comandos Git estándar siguiendo el flujo de trabajo descrito.</p>
+</body>
+</html>
+
